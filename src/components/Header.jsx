@@ -1,7 +1,7 @@
 function Header() {
     return(
         <header>
-            <h1>dr0te</h1>
+            <h1>Archive Style Gram</h1>
 
             <nav>
                 <a href="#">Home</a>

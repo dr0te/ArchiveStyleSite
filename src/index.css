@@ -15,7 +15,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
-  background: linear-gradient(#1a0000, #430505);
+  background: linear-gradient(#3b0000, #290101);
 }
 a {
   text-decoration: none;
@@ -28,14 +28,16 @@ a {
 }
 a:hover {
   transform: scale(1.2);
-  color: #fe3030;
-  background-color: rgb(0, 0, 0);
+  color: #b40808;
+  background-color: rgb(23, 23, 23);
+  border-color: #c85454;
 }
 h1 {
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 20px;
-  border: 2px solid red;
-  border-radius: 10px;
-  background-color: rgb(72, 53, 53);
+  font-size: 30px;
+  border: 2px solid rgb(59, 4, 4);
+  border-radius: 100px;
+  background-color: rgb(27, 11, 11);
   padding: 10px;
+  color: #b82121;
 }
