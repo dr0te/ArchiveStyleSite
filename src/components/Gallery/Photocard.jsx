@@ -1,7 +1,6 @@
-function Gallery() {
+function Photocard() {
     return(
         <>
-        <section className="gallery">
         <div className="photo-card">
             <div className="card-header">
                 <img className="avatar" src="/avatar.png"  alt="Avatar" />
@@ -17,9 +16,8 @@ function Gallery() {
             </div>
             <p>Description</p>
         </div>
-        </section>
         </>
     )
 }
 
-export default Gallery
+export default Photocard
