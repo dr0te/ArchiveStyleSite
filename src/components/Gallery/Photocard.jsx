@@ -1,20 +1,20 @@
-function Photocard() {
+function Photocard(props) {
     return(
         <>
         <div className="photo-card">
             <div className="card-header">
                 <img className="avatar" src="/avatar.png"  alt="Avatar" />
-                <h3>Username</h3>
+                <h3>{props.user}</h3>
             </div>
             <div className="photo">
             <img src="/photo.jpg" alt="Photo" />
             </div>
 
             <div className="card-action">
-                <button>Like</button>
+                <button>Like {props.likes}</button>
                 <button>Save</button>
             </div>
-            <p>Description</p>
+            <p>{props.descr}</p>
         </div>
         </>
     )

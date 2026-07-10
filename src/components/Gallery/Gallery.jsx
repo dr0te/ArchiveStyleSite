@@ -4,10 +4,15 @@ function Gallery() {
     return(
         <>
         <section className="gallery">
-            <Photocard />
-            <Photocard />
-            <Photocard />
-            <Photocard />
+            <Photocard 
+                user="dr0te"
+                descr="I love my mother"
+                likes="20"
+            />
+            <Photocard 
+                user="gloria"
+                descr="My sunny days in Monako"
+            />
         </section>
         </>
     )
