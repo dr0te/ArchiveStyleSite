@@ -52,6 +52,7 @@
   background: #636b6e;
   overflow: hidden;
   border-radius: 15px;
+  margin-bottom: 10px;
 }
 .photo img {
   width: 100%;

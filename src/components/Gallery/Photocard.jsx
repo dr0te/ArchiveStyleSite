@@ -7,7 +7,7 @@ function Photocard(props) {
                 <h3>{props.user}</h3>
             </div>
             <div className="photo">
-            <img src="/photo.jpg" alt="Photo" />
+            <img src={props.photo} alt="Photo" />
             </div>
 
             <div className="card-action">

@@ -8,6 +8,7 @@ function Gallery() {
                 user="dr0te"
                 descr="I love my mother"
                 likes="20"
+                photo="/public/logo.png"
             />
             <Photocard 
                 user="gloria"
