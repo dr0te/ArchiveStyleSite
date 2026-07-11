@@ -7,7 +7,7 @@ function Gallery() {
             <Photocard 
                 user="dr0te"
                 descr="I love my mother"
-                likes="20"
+                likes={20}
                 photo="/public/logo.png"
             />
             <Photocard 

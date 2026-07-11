@@ -44,7 +44,6 @@
 }
 .card-action button:active {
   transform: scale(0.97);
-  color: red;
 }
 .photo {
   width: 100%;
@@ -62,4 +61,11 @@
 h3 {
   color: white;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.card-action button.liked {
+  color: red;
+}
+
+.card-action button.likef {
+  color: rgb(80, 93, 98);
 }
