@@ -3,7 +3,8 @@ function Photocard(props) {
    
    const[likes, setLikes] = useState(props.likes??0);
    const[isLiked, setIsLiked] = useState(false);
-   function handleLike(){
+   const[isSaved, setIsSave] = useState(false);
+    function handleLike(){
         if(!isLiked){
             setLikes(likes+1)
             setIsLiked(true)
@@ -12,6 +13,16 @@ function Photocard(props) {
             setLikes(likes-1)
             setIsLiked(false)
         }
+   }
+   function handleSave(){
+        if(!isSaved){
+            
+            setIsSave(true)
+        }
+        else{
+            setIsSave(false)
+        }
+
    }
 
     return(
@@ -29,7 +40,7 @@ function Photocard(props) {
                 <button onClick={handleLike} className={isLiked ? "liked" : "likef"}>
                     {isLiked ? "Liked" : "Like"} {likes}
                 </button>
-                <button>Save</button>
+                <button onClick={handleSave}>{isSaved ? "Saved" : "Save"}</button>
             </div>
             <p>{props.descr}</p>
         </div>
