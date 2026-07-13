@@ -69,3 +69,16 @@ h3 {
 .card-action button.likef {
   color: rgb(80, 93, 98);
 }
+
+.modal{
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.modal img{
+  max-width: 90%;
+  max-height: 90%;
+}

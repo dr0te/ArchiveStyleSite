@@ -4,6 +4,8 @@ function Photocard(props) {
    const[likes, setLikes] = useState(props.likes??0);
    const[isLiked, setIsLiked] = useState(false);
    const[isSaved, setIsSave] = useState(false);
+   const[isOpen, setIsOpen] = useState(false);
+
     function handleLike(){
         if(!isLiked){
             setLikes(likes+1)
@@ -24,6 +26,14 @@ function Photocard(props) {
         }
 
    }
+   function handleOpen(){
+        if(!isOpen){
+            setIsOpen(true)
+        }
+        else{
+            setIsOpen(false)
+        }
+   }
 
     return(
         <>
@@ -33,8 +43,13 @@ function Photocard(props) {
                 <h3>{props.user}</h3>
             </div>
             <div className="photo">
-            <img src={props.photo} alt="Photo" />
+            <img src={props.photo} alt="Photo" onClick={handleOpen} />
             </div>
+            {isOpen && (
+                <div className="modal" onClick={handleOpen}>
+                    <img src={props.photo} alt="Photo" />
+                </div>
+            ) }
 
             <div className="card-action">
                 <button onClick={handleLike} className={isLiked ? "liked" : "likef"}>
