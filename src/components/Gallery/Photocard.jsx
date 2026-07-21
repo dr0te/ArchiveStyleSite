@@ -1,10 +1,17 @@
 import { useState } from "react"
+import { Link } from "react-router-dom";
+
 function Photocard(props) {
    
    const[likes, setLikes] = useState(props.likes??0);
+
    const[isLiked, setIsLiked] = useState(false);
+
    const[isSaved, setIsSave] = useState(false);
-   const[isOpen, setIsOpen] = useState(false);
+
+   const[comments, setComments] = useState([
+                    "Good one"
+                ])
 
     function handleLike(){
         if(!isLiked){
@@ -26,14 +33,6 @@ function Photocard(props) {
         }
 
    }
-   function handleOpen(){
-        if(!isOpen){
-            setIsOpen(true)
-        }
-        else{
-            setIsOpen(false)
-        }
-   }
 
     return(
         <>
@@ -43,13 +42,8 @@ function Photocard(props) {
                 <h3>{props.user}</h3>
             </div>
             <div className="photo">
-            <img src={props.photo} alt="Photo" onClick={handleOpen} />
+            <img src={props.photo} alt="Photo" />
             </div>
-            {isOpen && (
-                <div className="modal" onClick={handleOpen}>
-                    <img src={props.photo} alt="Photo" />
-                </div>
-            ) }
 
             <div className="card-action">
                 <button onClick={handleLike} className={isLiked ? "liked" : "likef"}>
@@ -57,6 +51,7 @@ function Photocard(props) {
                 </button>
                 <button onClick={handleSave}>{isSaved ? "Saved" : "Save"}</button>
             </div>
+            <h3>Comments</h3>
             <p>{props.descr}</p>
         </div>
         </>

@@ -15,7 +15,7 @@
   aspect-ratio: 1/1;
 }
 .photo-card:hover {
-  transform: scale(1.05);
+  
   background: linear-gradient(#536b7b, #53a6c0);
 }
 .card-header{
@@ -68,17 +68,4 @@ h3 {
 
 .card-action button.likef {
   color: rgb(80, 93, 98);
-}
-
-.modal{
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.8);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-}
-.modal img{
-  max-width: 90%;
-  max-height: 90%;
 }
